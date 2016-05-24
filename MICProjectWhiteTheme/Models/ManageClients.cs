@@ -11,5 +11,6 @@ namespace MICProjectWhiteTheme.Models
         public string CompanyName { get; set; }
         public string RepresentatorName { get; set; }
         public string Designation { get; set; }
+        //public string Designation { get; set; }
     }
 }
