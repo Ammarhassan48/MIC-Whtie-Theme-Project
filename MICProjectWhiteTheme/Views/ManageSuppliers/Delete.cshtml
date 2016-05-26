@@ -1,0 +1,65 @@
+﻿@model MICProjectWhiteTheme.Models.ManageSuppliers
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ManageSuppliers</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SupplierName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SupplierName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SupplierCompany)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SupplierCompany)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SuppliersAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SuppliersAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SupplierPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SupplierPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SupplierEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SupplierEmail)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -23,11 +23,26 @@ namespace MICProjectWhiteTheme.Models
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+
         }
 
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
+
+        //public void Seed()
+        //{
+
+        //}
+
+        public DbSet<MICProjectWhiteTheme.Models.ManageClients> ManageClients { get; set; }
+
+        public DbSet<MICProjectWhiteTheme.Models.ManageSuppliers> ManageSuppliers { get; set; }
+
+        public DbSet<EmployeeTypes> EmployeeTypes { get; set; }
+
+        public DbSet<EmplyeeDesignations> EmployeeDesignations { get; set; }
+
     }
 }

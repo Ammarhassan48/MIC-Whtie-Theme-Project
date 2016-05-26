@@ -1,0 +1,59 @@
+﻿@model MICProjectWhiteTheme.Models.ManageSuppliers
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ManageSuppliers</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SupplierName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SupplierName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SupplierCompany)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SupplierCompany)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SuppliersAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SuppliersAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SupplierPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SupplierPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SupplierEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SupplierEmail)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SupplierID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
