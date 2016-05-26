@@ -196,12 +196,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageClientsController.cs" />
+    <Compile Include="Controllers\ManageSuppliersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\EmployeeTypes.cs" />
+    <Compile Include="Models\EmplyeeDesignations.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageClients.cs" />
+    <Compile Include="Models\ManageSuppliers.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -461,6 +467,16 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\AddProject.cshtml" />
+    <Content Include="Views\ManageClients\Create.cshtml" />
+    <Content Include="Views\ManageClients\Delete.cshtml" />
+    <Content Include="Views\ManageClients\Details.cshtml" />
+    <Content Include="Views\ManageClients\Edit.cshtml" />
+    <Content Include="Views\ManageClients\Index.cshtml" />
+    <Content Include="Views\ManageSuppliers\Create.cshtml" />
+    <Content Include="Views\ManageSuppliers\Delete.cshtml" />
+    <Content Include="Views\ManageSuppliers\Details.cshtml" />
+    <Content Include="Views\ManageSuppliers\Edit.cshtml" />
+    <Content Include="Views\ManageSuppliers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -125,18 +125,26 @@
                 <div id="sidebar-menu">
                     <ul>
                         <li class="text-muted menu-title">Navigation</li>
-                      
-                            <li class="has_sub">
-                            <a href="index.html" class="waves-effect active"><i class="zmdi zmdi-view-dashboard"></i> <span> Manage Projects </span> </a>
+
+                        <li class="has_sub">
+                            <a href="" class="waves-effect active"><i class="zmdi zmdi-view-dashboard"></i> <span> Manage Projects </span> </a>
                             <ul class="list-unstyled">
-                                <li><a href="ui-buttons.html">Add New Project</a></li>
+                                <li><a href="">Add New Project</a></li>
                                 <li><a href="ui-cards.html">View All</a></li>
                                 <li><a href="ui-checkbox-radio.html">Search Projects</a></li>
-                                
+
                             </ul>
                         </li>
                         <li>
-                            <a href="typography.html" class="waves-effect"><i class="zmdi zmdi-format-underlined"></i> <span> Mange Clients </span> </a>
+                            <a href="Views/ManageClients/Index" class="waves-effect"><i class="zmdi zmdi-format-underlined"></i> <span> Mange Clients </span> </a>    
+                            <ul class="list-unstyled">
+                                <li><a href="Views/ManageClients/Create">Add New Project</a></li>
+                                <li><a href="Views/ManageClients/Details.cshtml">View All</a></li>
+                                <li><a href="Views/ManageClients/Edit.cshtml">Edit</a></li>
+                                <li><a href="Views/ManageClients/Delete.cshtml">Delete</a></li>
+                            
+
+                            </ul>
                         </li>
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-invert-colors"></i> <span> Manage Employees </span> <span class="menu-arrow"></span></a>
@@ -243,6 +251,8 @@
                 @RenderBody()
             </div>
         </div>
+
+        @RenderSection("scripts", required: false)
 
         <!-- ============================================================== -->
         <!-- End Right content here -->

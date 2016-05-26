@@ -1,0 +1,58 @@
+﻿@model IEnumerable<MICProjectWhiteTheme.Models.ManageSuppliers>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SupplierName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SupplierCompany)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuppliersAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SupplierPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SupplierEmail)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SupplierName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SupplierCompany)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuppliersAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SupplierPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SupplierEmail)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SupplierID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SupplierID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SupplierID })
+        </td>
+    </tr>
+}
+
+</table>
